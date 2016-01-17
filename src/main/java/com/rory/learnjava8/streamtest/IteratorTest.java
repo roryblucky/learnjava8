@@ -1,4 +1,4 @@
-package com.rory.learnjava8;
+package com.rory.learnjava8.streamtest;
 
 import com.rory.learnjava8.model.Artist;
 
