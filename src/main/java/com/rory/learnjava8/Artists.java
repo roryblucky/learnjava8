@@ -23,11 +23,8 @@ public class Artists {
         return Optional.of(artists.get(index));
     }
 
-    public Optional<String> getArtistName(int index) {
+    public String getArtistName(int index) {
         Optional<Artist> artistOptional = getArtist(index);
-        if (artistOptional.isPresent()) {
-            return Optional.of(artistOptional.get().getName());
-        }
-        return Optional.empty();
+        return artistOptional.map(Artist::getName).orElse("unknown");
     }
 }
